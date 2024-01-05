@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  button {
+    @apply font-Raleway;
+  }
+
+  p {
+    @apply font-openSans;
+  }
+
+  li {
+    @apply text-sm tracking-wide hover:text-gradient1 duration-200;
+  }
+}
+
+body {
+  @apply font-openSans bg-emailBackground text-White;
+}
+
+@media (max-width: 400px) {
+  p{
+    @apply text-xs;
+  }
+  li {
+    @apply text-xs; /* Apply text-xs for screens below 200px */
+  }
+}
